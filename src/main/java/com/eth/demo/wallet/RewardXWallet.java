@@ -9,12 +9,14 @@ import org.ethereum.core.Wallet;
 public class RewardXWallet {
 	public static void main(String[] args) throws ParserConfigurationException, TransformerException {
 		RewardXAccount rAccount = new RewardXAccount();
-		rAccount.getAddress();
+//		rAccount.getAddress();
+		rAccount.getAddressFromPrivateKey("fe506004ed0de638b4fb13cec2d448b898e7a9ce5a29db5d486998777884c520".getBytes());
+		System.out.println("mist address: "+ rAccount.getAddrBase16());
 		
 		Wallet rewardxWallet = new Wallet();
 		Account rewardxAccount = new Account();
 		rewardxAccount.setAddress(rAccount.getAddrBase16().getBytes());
-		rewardxWallet.addNewAccount();
+		System.out.println(rewardxWallet.totalBalance());
 		
 		rewardxWallet.addListener(new RewardXWalletListner());
 		

@@ -32,9 +32,25 @@ public class RewardXAccount {
 
         addrBase16 = Hex.toHexString(addr);
         privBase16 = Hex.toHexString(priv);
+        System.out.println("Address     : " + addrBase16);
+        System.out.println("Private Key : " + privBase16);
         
 	}
 	
+	public void getAddressFromPrivateKey(byte [] privKey){
+		ECKey key = ECKey.fromPrivate(privKey);
+
+        byte[] addr = key.getAddress();
+        byte[] priv = key.getPrivKeyBytes();
+
+        addrBase16 = Hex.toHexString(addr);
+        privBase16 = Hex.toHexString(priv);
+        System.out.println("Address     : " + addrBase16);
+        System.out.println("Private Key : " + privBase16);
+        
+	}
+//	0xb9568F0B9d9C9D519ADD19C6b0D364b937e4749c
+//	f88d4a5ae1cc6e5e8b7e99e13a2dac312e0a076f23c648a9851f7d89a9015757
 	
     public static void main(String[] args) {
     	RewardXAccount rx = new RewardXAccount();
