@@ -1,0 +1,49 @@
+13:58:25 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+13:58:25 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+13:58:25 INFO [general]  Config ( no  ): user properties from file 'C:\Users\Experience\Desktop\Etherium\code\ethereum-gradle-demo\config\ethereumj.conf'
+13:58:25 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+13:58:25 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+13:58:25 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+13:58:25 INFO [general]  Config ( no  ): config passed via constructor
+13:58:26 INFO [general]  New nodeID generated: 2d8a8363344de99541b4ae6b0b80fe506b279492b5b8f02c7c085d4f41c51892f76ea302cd8912dc029f75ece5c206e8b9965f3bb183fe05f13ffcd4cd4a4853
+13:58:26 INFO [general]  Generated nodeID and its private key stored in database\nodeId.properties
+13:58:26 INFO [general]  Running frontier.json,  core version: 1.1.0-RELEASE
+13:58:26 INFO [general]  git.hash: [4df3f9e]
+13:58:26 INFO [general]  build.time: [GMT]-[11/Feb/2016]-[17:16]
+13:58:26 INFO [general]  
+13:58:26 INFO [general]  capability eth version: [60, 61, 62]
+13:58:26 INFO [general]  capability shh version: [3]
+13:58:26 INFO [general]  capability bzz version: [0]
+13:58:29 INFO [general]  leveldb key-value data source created.
+13:58:29 INFO [general]  leveldb key-value data source created.
+13:58:31 INFO [general]  External IP wasn't set, using checkip.amazonaws.com to identify it...
+13:58:31 INFO [general]  External address identified: 27.100.12.50
+13:58:32 INFO [general]  EthereumJ node started: enode://2d8a8363344de99541b4ae6b0b80fe506b279492b5b8f02c7c085d4f41c51892f76ea302cd8912dc029f75ece5c206e8b9965f3bb183fe05f13ffcd4cd4a4853@27.100.12.50:30303
+13:58:32 INFO [blockqueue]  Start loading sync queue
+13:58:32 INFO [sync]  Sync Manager: ON
+13:58:32 INFO [blockqueue]  Hash store loaded, size [0]
+13:58:32 INFO [blockqueue]  Block queue loaded, size [0]
+13:58:32 INFO [blockqueue]  Header store loaded, size [0]
+13:58:32 INFO [sync]  Changing state from IDLE to HASH_RETRIEVING
+13:58:32 INFO [sync]  
+
+13:58:32 INFO [sync]  State HASH_RETRIEVING
+
+13:58:32 INFO [general]  DB is empty - adding Genesis
+13:58:38 INFO [general]  Genesis block loaded
+13:58:38 INFO [general]  Bind address wasn't set, Punching to identify it...
+13:58:38 INFO [general]  UDP local bound to: 192.168.0.53
+13:58:38 INFO [discover]  Discovery UDPListener started
+13:58:38 INFO [general]  In memory 'wireTransactions' storage created.
+13:58:38 INFO [general]  Connecting to the block store
+13:58:38 INFO [general]  Ethereum listener added
+13:58:39 INFO [discover]  Reading Node statistics from DB: 0 of 0 nodes.
+13:59:02 INFO [sync]  
+
+13:59:02 INFO [sync]  State HASH_RETRIEVING
+
+13:59:32 INFO [sync]  
+
+13:59:32 INFO [sync]  State HASH_RETRIEVING
+
+13:59:39 INFO [discover]  Write Node statistics to DB: 2 nodes.

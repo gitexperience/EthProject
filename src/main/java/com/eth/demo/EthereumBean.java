@@ -11,6 +11,7 @@ public class EthereumBean {
     public void start(){
         this.ethereum = EthereumFactory.createEthereum();
         this.ethereum.addListener(new EthereumDemo(ethereum));
+        
     }
 
 

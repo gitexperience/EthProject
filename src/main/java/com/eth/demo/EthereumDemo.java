@@ -46,7 +46,7 @@ import java.util.List;
      * Just small method to estimate total power off all miners on the net
      * @param block
      */
-    private void calcNetHashRate(Block block){
+    public void calcNetHashRate(Block block){
 
         if ( block.getNumber() > 1000){
 
