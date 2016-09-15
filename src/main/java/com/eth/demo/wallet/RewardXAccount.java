@@ -7,6 +7,8 @@ public class RewardXAccount {
 	String addrBase16;
 	String privBase16;
 	
+	public static long userRewards = 0;
+	
 	public String getAddrBase16() {
 		return addrBase16;
 	}
@@ -45,8 +47,8 @@ public class RewardXAccount {
 
         addrBase16 = Hex.toHexString(addr);
         privBase16 = Hex.toHexString(priv);
-        System.out.println("Address Orig     : " + addrBase16);
-        System.out.println("Private Key Orig : " + privBase16);
+        System.out.println("Address     : " + addrBase16);
+        System.out.println("Private Key : " + privBase16);
         
 	}
 //	0xb9568F0B9d9C9D519ADD19C6b0D364b937e4749c
@@ -54,9 +56,6 @@ public class RewardXAccount {
 	
     public static void main(String[] args) {
     	RewardXAccount rx = new RewardXAccount();
-    	String str= "bc70fe3a986e456544215f55edcee6dd7da32ea45ef01168ac180bdc2e33120f";
-    	byte [] addr= str.getBytes();
-    	rx.getAddressFromPrivateKey(addr);
     	rx.getAddress();
         System.out.println("Address     : " + rx.getAddrBase16());
         System.out.println("Private Key : " + rx.getPrivBase16());
