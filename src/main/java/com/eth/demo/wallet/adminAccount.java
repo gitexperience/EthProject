@@ -70,9 +70,7 @@ public class adminAccount
     public static void main(String[] args) {
     	adminAccount admin = adminAccount.getInstance();
     	admin.getAddress();
-    	admin.rewards=100000;
-        System.out.println("Address     : " + rx.getAddrBase16());
-        System.out.println("Private Key : " + rx.getPrivBase16());
+    	adminAccount.rewards=100000;
     }
     
     
